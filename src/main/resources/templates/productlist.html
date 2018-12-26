@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>product_list.html</title>
+</head>
+<body>
+<h2>Product List</h2>
+<hr>
+<a href="/product_form.html">New Product</a>
+
+<table border=1>
+<tr>
+	<th>ID</th>
+	<th>Product Name</th>
+	<th>Price</th>
+</tr>
+<tr data-th-each="p : ${products}">
+	<td data-th-text="${p.id}">1</td>
+	<td data-th-text="${p.name}">Apple Iphone Xs</td>
+	<td data-th-text="${p.price}">130000</td>
+</tr>
+</table>
+</body>
+</html>
